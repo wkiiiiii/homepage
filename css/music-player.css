@@ -1,0 +1,112 @@
+/* Music Player Styles */
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(44, 95, 45, 0.85);
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--light-green);
+    transition: all 0.3s ease;
+}
+
+.music-player:hover {
+    background-color: rgba(44, 95, 45, 0.95);
+    transform: translateY(-3px);
+}
+
+.play-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--leaf-accent);
+    margin-right: 15px;
+    transition: all 0.2s ease;
+}
+
+.play-button:hover {
+    background-color: var(--light-green);
+    transform: scale(1.1);
+}
+
+.track-info {
+    color: white;
+    font-weight: 500;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.track-info:hover {
+    color: var(--leaf-accent);
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    width: 80px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .music-player {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 15px;
+    }
+    
+    .play-button {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+    
+    .track-info {
+        font-size: 0.8rem;
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .volume-slider {
+        width: 60px;
+    }
+} 
