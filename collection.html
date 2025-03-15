@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Collection | Forest Gamer's Haven</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Forest Gamer's Haven</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="ratings.html">Game Ratings</a></li>
+                <li><a href="collection.html" class="active">My Collection</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="page-header">
+            <h1>My Collection</h1>
+        </section>
+        
+        <section class="collection-stats">
+            <div class="stat-card">
+                <div class="stat-number">15</div>
+                <div class="stat-label">Games Owned</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Nature-Themed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4.2</div>
+                <div class="stat-label">Avg. Rating</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Wishlist</div>
+            </div>
+        </section>
+        
+        <section class="collection-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="owned">Owned Games</button>
+                <button class="tab-btn" data-tab="wishlist">Wishlist</button>
+            </div>
+            
+            <div class="tab-content active" id="owned">
+                <div class="game-cards" id="owned-games-container">
+                    <!-- Owned games will be loaded from JavaScript -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="wishlist">
+                <div class="game-cards" id="wishlist-games-container">
+                    <!-- Wishlist games will be loaded from JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Forest Gamer's Haven</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="ratings.html">Ratings</a>
+                <a href="collection.html">Collection</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Forest Gamer's Haven. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/games.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

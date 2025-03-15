@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Ratings | Forest Gamer's Haven</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Forest Gamer's Haven</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="ratings.html" class="active">Game Ratings</a></li>
+                <li><a href="collection.html">My Collection</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="page-header">
+            <h1>Game Ratings</h1>
+        </section>
+        
+        <section class="filters">
+            <div class="filter-container">
+                <label for="category-filter">Category:</label>
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="Strategy">Strategy</option>
+                    <option value="Card Game">Card Game</option>
+                    <option value="Nature">Nature</option>
+                    <option value="Animals">Animals</option>
+                    <option value="Family">Family</option>
+                </select>
+            </div>
+            
+            <div class="filter-container">
+                <label for="complexity-filter">Complexity:</label>
+                <select id="complexity-filter">
+                    <option value="all">All Levels</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+            
+            <div class="filter-container">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="rating-desc">Rating (High to Low)</option>
+                    <option value="rating-asc">Rating (Low to High)</option>
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                </select>
+            </div>
+        </section>
+        
+        <section class="games-list">
+            <div class="game-cards" id="all-games-container">
+                <!-- Games will be loaded from JavaScript -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Forest Gamer's Haven</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="ratings.html">Ratings</a>
+                <a href="collection.html">Collection</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Forest Gamer's Haven. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/games.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

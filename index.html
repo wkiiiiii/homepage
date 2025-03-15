@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Gamer's Haven</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Forest Gamer's Haven</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="ratings.html">Game Ratings</a></li>
+                <li><a href="collection.html">My Collection</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Board Game Journey</h1>
+                <p>Exploring strategic worlds through the lens of nature</p>
+                <a href="ratings.html" class="btn">View My Ratings</a>
+            </div>
+        </section>
+        
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <div class="game-cards" id="featured-games-container">
+                <!-- Games will be loaded from JavaScript -->
+            </div>
+        </section>
+        
+        <section class="recent-plays">
+            <h2>Recently Played</h2>
+            <div class="recent-play-list">
+                <div class="recent-play">
+                    <div class="date">June 15, 2023</div>
+                    <div class="game-info">
+                        <h3>Ark Nova</h3>
+                        <p>Played with 3 friends. Focused on conservation strategy and won by 5 points!</p>
+                    </div>
+                </div>
+                <div class="recent-play">
+                    <div class="date">June 8, 2023</div>
+                    <div class="game-info">
+                        <h3>Forest Shuffle</h3>
+                        <p>Quick game night with family. The fox cards were particularly lucky this time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Forest Gamer's Haven</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="ratings.html">Ratings</a>
+                <a href="collection.html">Collection</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Forest Gamer's Haven. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/games.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
